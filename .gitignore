@@ -1,0 +1,12 @@
+.idea/
+node_modules/
+package-lock.json
+dist/
+app/controllers/dist/
+.vscode/
+data/
+app/routes/dist/
+app/models/dist/
+app/controllers/dist/boilers-data.dev.js
+app/controllers/dist/customers.dev.js
+app/utils/dist/

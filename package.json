@@ -1,0 +1,38 @@
+{
+    "name": "curso-radium",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint .",
+        "prettier": "prettier --write"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "mongodb": "^3.6.3",
+        "mongoose": "^5.10.18",
+        "slf4n-logging": "^1.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6",
+        "pre-commit": "^1.2.2",
+        "prettier": "^2.2.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bergmannfederico/caldar-G8.git"
+    },
+    "bugs": {
+        "url": "https://github.com/bergmannfederico/caldar-G8/issues"
+    },
+    "homepage": "https://github.com/bergmannfederico/caldar-G8#readme",
+    "pre-commit": "lint"
+}
