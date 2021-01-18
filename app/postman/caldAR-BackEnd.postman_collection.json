@@ -1,0 +1,797 @@
+{
+	"info": {
+		"_postman_id": "4f6ccee6-7115-4da9-a641-b8573d013522",
+		"name": "caldAR-BackEnd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "appointments",
+			"item": [
+				{
+					"name": "getAllAppointments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/appointments/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"appointments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAppointmentByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/appointments/6000792e9bf33b60d2f0a01d",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"appointments",
+								"6000792e9bf33b60d2f0a01d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAppointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"building\": \"600079acfc13ae167a00001b\",\r\n    \"boiler\": \"600079acfc13ae167a00002c\",\r\n    \"technician\": \"600079acfc13ae167a00001d\",\r\n    \"startTime\": \"2020-02-06T00:00:00.000Z\",\r\n    \"endTime\": \"2020-08-13T00:00:00.000Z\",\r\n    \"monthlyTimework\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/appointments/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"appointments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAppointment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"building\": \"600079acfc13ae167a00001b\",\r\n    \"boiler\": \"600079acfc13ae167a00001c\",\r\n    \"technician\": \"600079acfc13ae167a00001d\",\r\n    \"startTime\": \"2020-02-06T00:00:00.000Z\",\r\n    \"endTime\": \"2020-08-13T00:00:00.000Z\",\r\n    \"monthlyTimework\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/appointments/6000792e9bf33b60d2f0a01d",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"appointments",
+								"6000792e9bf33b60d2f0a01d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAppointment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/appointments/600612843f927b0015b79501",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"appointments",
+								"600612843f927b0015b79501"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://caldar-backend.herokuapp.com/appointments/6000792e9bf33b60d2f0a01d",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/appointments/6000792e9bf33b60d2f0a01d",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"appointments",
+								"6000792e9bf33b60d2f0a01d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "boilers",
+			"item": [
+				{
+					"name": "getAllBoilers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/boilers/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"boilers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBoilersByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/boilers/600068ff9bf33b60d2d7c48d",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"boilers",
+								"600068ff9bf33b60d2d7c48d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createBoiler",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idType\": \"60003613fc13ae410c000007\",\r\n    \"description\": \"carpediem\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/boilers/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"boilers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateBoilers",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"description\": \"carpe diem\",\r\n    \"idType\": \"60003613fc13ae410c000007\",\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/boilers/600613e83f927b0015b79502",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"boilers",
+								"600613e83f927b0015b79502"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBoiler",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/boilers/600613e83f927b0015b79502",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"boilers",
+								"600613e83f927b0015b79502"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "boiler types",
+			"item": [
+				{
+					"name": "getAllBoilerTypes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/boilerTypes/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"boilerTypes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBoilerTypeByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/boilers/6004ba8c6f363437c0f6bc43",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"boilers",
+								"6004ba8c6f363437c0f6bc43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createBoilerType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"idType\": \"60003613fc13ae410c000005\",\r\n    \"description\": \"crash boom ban\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/boilers/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"boilers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateBoilerType",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"idType\": \"60003613fc13ae410c000005\",\r\n    \"description\": \"carpe diem delerium \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/boilers/600614fc3f927b0015b79504",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"boilers",
+								"600614fc3f927b0015b79504"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBoilerType",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/boilers/600614fc3f927b0015b79504",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"boilers",
+								"600614fc3f927b0015b79504"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "buildings",
+			"item": [
+				{
+					"name": "getAllBuildings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/buildings",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"buildings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBuildingByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/buildings/60022195018e0c1eb61b79d6",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"buildings",
+								"60022195018e0c1eb61b79d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createBuilding",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"boilers\": [\r\n        \"60003986fc13ae161b000168\",\r\n        \"60003986fc13ae161b000169\",\r\n        \"60003986fc13ae161b00016a\",\r\n        \"60003986fc13ae161b00016b\",\r\n        \"60003986fc13ae161b00016c\"\r\n    ],\r\n     \"address\": \"Belgrano 1023\",\r\n    \"fullName\": \"Fusetti JR\",\r\n    \"phoneNumber\": \"495-664-5270\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/buildings/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"buildings",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateBuilding",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\"boilers\": [\"60003986fc13ae161b000168\",\r\n        \"60003986fc13ae161b000169\"],\r\n      \"fullName\": \"Fusetti JR\",\r\n    \"address\": \"Belgrano 1023\",\r\n    \"phoneNumber\": \"495-664-5270\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/buildings/600619543f927b0015b79505",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"buildings",
+								"600619543f927b0015b79505"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBuilding",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/buildings/600619543f927b0015b79505",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"buildings",
+								"600619543f927b0015b79505"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "getAll Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/customers/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"customers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCustomerByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/customers/600379dce167e669289260a5",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"customers",
+								"600379dce167e669289260a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createCustomer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"buildings\": [\r\n        \"60003bacfc13ae161b0003b5\"\r\n    ],\r\n    \"_id\": \"600379dce167e669289260a5\",\r\n    \"cuit\": \"524323473\",\r\n    \"name\": \"Adams BlassC\",\r\n    \"email\": \"asindle1@auda.org.au\",\r\n    \"address\": \"0 Crowley Park\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/customers/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"customers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCustomer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"buildings\": [\r\n        \"60003bacfc13ae161b0003b5\"\r\n    ],\r\n\r\n    \"cuit\": \"524323473\",\r\n    \"name\": \"Adams Blossom\",\r\n    \"email\": \"asindle1@auda.org.au\",\r\n    \"address\": \"0 Crowley Park\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/customers/600379dce167e669289260a5",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"customers",
+								"600379dce167e669289260a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCustomer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/customers/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"customers",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "technicians",
+			"item": [
+				{
+					"name": "getAllTechnicians",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/technicians/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"technicians",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTechnicianByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/technicians/60007b029bf33b60d2f4268f",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"technicians",
+								"60007b029bf33b60d2f4268f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createTechnician",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"boilersType\": [\r\n        \"60004393fc13ae38df0000cc\",\r\n        \"60004393fc13ae38df0000cd\",\r\n        \"60004393fc13ae38df0000ce\"\r\n    ],\r\n   \r\n    \"fullName\": \"Salma Hayek\",\r\n    \"monthlyTimework\": 10,\r\n    \"phoneNumber\": \"616-999-4565\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/technicians/",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"technicians",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateTechnician",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"boilersType\": [\r\n        \"60004393fc13ae38df0000cc\",\r\n        \"60004393fc13ae38df0000cd\",\r\n        \"60004393fc13ae38df0000ce\"\r\n    ],\r\n    \"_id\": \"60007b029bf33b60d2f4268f\",\r\n    \"fullName\": \"Dagmar Beard\",\r\n    \"monthlyTimework\": 70,\r\n    \"phoneNumber\": \"616-999-2935\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/technicians/60007b029bf33b60d2f4268f",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"technicians",
+								"60007b029bf33b60d2f4268f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTechnician",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://caldar-backend.herokuapp.com/technicians/60061da83f927b0015b7950b",
+							"protocol": "https",
+							"host": [
+								"caldar-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"technicians",
+								"60061da83f927b0015b7950b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
